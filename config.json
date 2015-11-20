@@ -1,12 +1,12 @@
 {
   "vm": {
     "ip": "192.168.44.44",
-    "memory": "1024",
+    "memory": "4096",
     "synced_folders": [
       {
         "host_path": "data/",
         "guest_path": "/var/www",
-        "type": "default"
+        "type": "nfs"
       }
     ],
     "forwarded_ports": []
@@ -35,6 +35,18 @@
           "document_root": "drupal7",
           "url": "drupal7.dev",
           "alias": ["www.drupal7.dev"]
+        }
+      },
+      "mashable": {
+        "account_name": "root",
+        "account_pass": "root",
+        "account_mail": "amouri.akram@gmail.com",
+        "site_name": "Mashable par France 24",
+        "site_mail": "amouri.akram@gmail.com",
+        "vhost": {
+          "document_root": "mashable",
+          "url": "mashable.dev",
+          "alias": ["www.mashable.dev"]
         }
       }
     }
